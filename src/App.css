@@ -1,38 +1,109 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.heading{
+  margin-top: 1rem;
+  font-family: 'Roboto Mono', monospace;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.review{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tac{
+  border: 2px solid rgb(173, 173, 173);
+  margin: 0px auto;
+  margin-top: 3rem;
+  height: 15rem;
+  width: 100%;
+  border-radius:6px ;
+  overflow-y: scroll;
+  padding: 1rem 1rem;
+  text-align: justify;
+  margin-bottom: 4rem;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.review_button{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.tac p{
+  margin-top: 0.6rem;
+  font-size: 14px;
+  color: rgb(142 140 140);
+}
+
+.PersonalForm_form button{
+  margin-bottom: 4rem;
+}
+
+.AccountInfo_button button{
+  margin-bottom: 4rem;
+}
+
+
+.PersonalForm_form{
+  /* border: 2px solid rebeccapurple; */
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.MuiInputBase-root{
+  margin-bottom: 0.5rem;
+}
+
+.PersonalForm_form{
+  width: 50%;
+}
+
+.PersonalInfo_wrapper p{
+  font-size: 10px;
+  color: red;
+  margin-bottom: 0.7rem;
+}
+
+/* ****************** */
+.AccountInfo_fieldcontainer{
+  /* border: 2px solid red; */
+  width: 50%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.AccountInfo_fieldcontainer p {
+  font-size: 10px;
+  color: red;
+  margin-bottom: 0.7rem;
+}
+
+.password_field{
+  margin-top: 2rem; 
+}
+
+.AccountInfo_button{
+  margin-top: 2rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.AccountInfo_button button{
+    margin-right: 2rem;    
+    width: 8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.review_button button {
+  width: 6rem;
+  margin-right: 1rem;
 }
+
